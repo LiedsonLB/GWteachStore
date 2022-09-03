@@ -8,6 +8,21 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 16px;
+
+}
+::-webkit-scrollbar-thumb {
+    background-color: #050155;
+    border-radius: 16px;
+}
+
 #screen-main {
     height: 100vh;
     width: 100%;
@@ -21,7 +36,8 @@ html, body {
 #container-login {
   z-index: 15;
   position: relative;
-  background: #fff;
+  background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+  background-size: cover;
   height: 100vh;
   bottom: 0px;
   width: 20%;
@@ -70,7 +86,7 @@ html, body {
 }
 #mobile-version a, #container-category a{
     text-decoration: none;
-    color: #161616;
+    color: #fff;
     font-size: 20px;
     padding: 10px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -83,12 +99,13 @@ html, body {
 header {
     color: #fff;
     min-height: 60px;
-    background-color: #fff;
     width: 100%;
+    background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    background-size: cover;
     z-index: 10;
     font-family: 'Roboto Condensed', sans-serif;
     flex-wrap: wrap;
@@ -109,8 +126,11 @@ header {
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     animation: apresentionPage 1.5s linear;
+}
+#menu i {
+    color: #fff;
 }
 .container-li {
     display: flex;
@@ -133,7 +153,7 @@ header {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: #161616;
+    color: #fff;
     outline: none;
     width: 70px;
     text-align: center;
@@ -172,16 +192,19 @@ header {
     animation: apresentionPage 1.5s linear;
 }
 #seach-bar {
+    background: transparent;
     outline: none;
-    border: 1px solid gray;
+    border: 1px solid #161616;
     border-right: none !important;
     animation: movebar 2s infinite ease-in;
 }
 #seach-bar::placeholder {
     padding-left: 10px;
+    color: #fff;
+    opacity: 0.6;
 }
 #seach button {
-    border: 1px solid gray;
+    border: 1px solid #161616;
     background-color: rgb(0, 157, 255);
     color: #fff;
     border-left: none !important;
@@ -209,7 +232,7 @@ main {
     position: absolute;
     z-index: -1;
     width: 100%;
-    background: url(./img/apresention.jpeg);
+    background: url(https://img.freepik.com/fotos-gratis/vista-lateral-do-homem-usando-smartphone_23-2148793481.jpg?size=626&ext=jpg&ga=GA1.2.1861192060.1644141439);
     background-size: cover;
     opacity: 0.9;
     height: 100%;
@@ -244,7 +267,7 @@ main {
     flex-wrap: wrap;
 }
 #apresention {
-    color: #161616;
+    color: #fff;
     font-weight: bolder;
     text-align: center;
     text-align: center;
@@ -340,7 +363,8 @@ main {
 
                                     /* MAIN 3*/                              
 #container-main3 {
-    background: linear-gradient(#050155, #ea3201);
+    background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+    background-size: cover;
     width: 100%;
     height: auto;
     text-align: center;
@@ -463,11 +487,13 @@ main {
                                     /* FOOTER */
 footer {
     width: 100vw;
-    background-color: #fff;
+    background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+    background-size: cover;
     height: auto !important;
     font-size: 14px;
     position: fixed;
     bottom: 0px;
+    color: #fff;
 }
 footer h6 {
     font-size: 14px;
@@ -486,6 +512,7 @@ footer h6 {
 }
 .colluns a {
     font-weight: 600;
+    color: #fff;
 }
 .footer-links {
     width: 250px;
@@ -554,7 +581,7 @@ footer h6 {
     }
     #background-main {
         height: 100%;
-        background-position-x: -500px !important;
+        background-position-x: -265px !important;
     }
     #container-main-apresetion {
         min-height: 100vh;
@@ -575,7 +602,6 @@ footer h6 {
         height: 80%;
     }
     #container-main3 {
-        background: linear-gradient(#050155, #ea3201);
         height: 100%;
         width: 100%;
         text-align: center;
@@ -616,6 +642,19 @@ footer h6 {
         gap: 5px;
         width: 90%;
         overflow-y: hidden;
+    }
+    #container-secundary-news::-webkit-scrollbar {
+        background-color: transparent;
+        width: 0px;
+    }
+    #container-secundary-news::-webkit-scrollbar-track {
+        background-color: transparent;
+        width: 0px;
+    
+    }
+    #container-secundary-news::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        width: 0px;
     }
     .news-img {
         width: 50%;
@@ -673,7 +712,7 @@ footer h6 {
         gap: 70px;
     }
     #apresention {
-    color: #050155;
+    color: #fff;
     font-weight: bolder;
     font-size: 25px;
     margin: 0 auto;
