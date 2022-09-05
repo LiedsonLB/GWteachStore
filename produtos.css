@@ -195,7 +195,6 @@ header {
     border: none;
     border-bottom: 1px solid #fff !important;
     animation: movebar 2s infinite ease-in;
-    text-align: center;
 }
 #seach-bar::placeholder {
     padding-left: 10px;
@@ -398,23 +397,12 @@ main {
 }
 #container-main-news .news-img {
     padding: 20px;
-    height: 60%;
+    height: auto;
     width: 100%;
 }
 #container-main-news .text-news {
-    height: 40%;
+    height: 50%;
     width: 100%;
-    padding: 10px;
-}
-.text-news p {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-    padding: 10px;
-}
-.text-news h4 {
-    width: 90%;
-    margin: 0 auto;
 }
 #container-main-news a {
     width: 100%;
@@ -456,22 +444,6 @@ main {
 #container-main-news h4, #container-secundary-news .news h4 {
     font-weight: bolder;
 }
-                                          /*IMAGENS DAS NOTICIAS*/
-#main-img1{
-background: url(https://i0.wp.com/gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2019/12/rosebox-BFdSCxmqvYc-unsplash-e1575929652108.jpg?resize=800%2C450&ssl=1);
-background-size: cover;
-background-position: center;
-}
-#secundary-img1{
-background: url(https://prideone.online/wp-content/uploads/2022/03/parcerias-de-sucesso.jpg.webp);
-background-size: cover;
-background-position: center;
-}
-#secundary-img2{
-background: url(https://static.vecteezy.com/ti/fotos-gratis/p1/1226778-trabalhador-postal-maos-caixa-de-papel-para-cliente-gr%C3%A1tis-foto.jpg);
-background-size: cover;
-background-position: center;
-}
 .news-img {
     height: 100%;
     background: #fff;
@@ -501,7 +473,7 @@ background-position: center;
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     }
 
@@ -674,10 +646,6 @@ footer h6 {
     }
     #container-main-news {
         width: 90%;
-    }
-    #container-main-news .news-img {
-        height: 210px;
-        width: 100%;
     }
     #container-secundary-news {
         height: auto;
