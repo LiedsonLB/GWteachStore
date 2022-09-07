@@ -39,7 +39,7 @@ html, body {
   background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
   background-size: cover;
   height: 100%;
-  width: 20%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,6 +271,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    scale: 0.9;
 }
 #apresention-text {
     height: 50%;
@@ -334,6 +335,7 @@ main {
     flex-flow: wrap;
     flex-direction: row;
     justify-content: space-around;
+    scale: 0.9;
 }
 .produtos {
     height: 320px;
@@ -370,6 +372,12 @@ main {
     flex-direction: column;
     padding: 50px 0px;
 }
+#container-main3 h2{
+    font-size: 3rem;
+}
+#container-main3 p{
+    margin-bottom: -10px;
+}
 #container-news {
     width: 100%;
     display: flex;
@@ -382,6 +390,7 @@ main {
     margin: auto;
     justify-content: center;
     gap: 5px;
+    scale: 0.9;
 }
 #container-main-news {
     display: flex;

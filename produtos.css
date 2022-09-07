@@ -343,6 +343,7 @@ main {
 }
 .produtos img {
     max-width: 200px;
+    border-radius: 10px;
 }
 .produtos a{
     text-decoration: none;
