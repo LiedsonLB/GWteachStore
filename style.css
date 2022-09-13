@@ -36,15 +36,23 @@ html, body {
 #container-login {
   z-index: 15;
   position: relative;
-  background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+  background: #161616;
   background-size: cover;
   height: 100%;
-  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   overflow-x: hidden;
+  animation: menu .5s ease-in-out
+}
+@keyframes menu {
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 #menu-category {
     height: 100%;
@@ -60,13 +68,14 @@ html, body {
     float: left;
     padding: 8px 0px 5px 100px;
     height: 45px;
+    transform: translate(55px, 0px);
 }
 #close-login {
   background: transparent;
   border: none;
   font-size: 30px;
   float: right;
-  color: #161616;
+  color: #fff;
 }
 .form-floating {
   width: 80%;
@@ -99,7 +108,7 @@ header {
     color: #fff;
     min-height: 60px;
     width: 100%;
-    background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+    background: #161616;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -233,7 +242,7 @@ main {
     position: absolute;
     z-index: -1;
     width: 100%;
-    background: url(https://img.freepik.com/fotos-gratis/vista-lateral-do-homem-usando-smartphone_23-2148793481.jpg?size=626&ext=jpg&ga=GA1.2.1861192060.1644141439);
+    background: #161616;
     background-size: cover;
     opacity: 0.9;
     height: 100%;
@@ -246,17 +255,32 @@ main {
 #img-back-man {
     right: 0px !important;
 }
+#plus {
+    height: 500px;
+    width: 35%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#plus img {
+    position: absolute;
+    height: 80%;
+    filter: invert(1);
+}
 #container-main {
     height: 100%;
     animation: apresentionPage 1s linear;
+    background: #161616;
 }
 #container-main-apresetion {
+    background: #161616;
     font-size: 25px;
     display: flex;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     min-height: 100%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -274,6 +298,7 @@ main {
 }
 #apresention-text {
     height: 50%;
+    width: 90%;
     margin: auto auto;
     display: flex;
     align-items: center;
@@ -292,9 +317,14 @@ main {
     text-decoration: none;
     border: 1px solid #050155;
     padding: 10px 10px;
-    color: #050155;
+    height: 50px;
+    color: #fff;
+    background: #050155;
     border-radius: 10px;
     font-weight: 100;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
 }
 #apresention a:hover {
     background-color: #050155;
@@ -345,6 +375,7 @@ main {
 }
 .produtos img {
     max-width: 200px;
+    border-radius: 10px;
 }
 .produtos a{
     text-decoration: none;
@@ -359,7 +390,7 @@ main {
 
                                     /* MAIN 3*/                              
 #container-main3 {
-    background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+    background: #161616;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -517,7 +548,7 @@ background-position: center;
                                     /* FOOTER */
 footer {
     width: 100vw;
-    background: url(https://www.adobe.com/br/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium);
+    background: #161616;
     background-size: cover;
     height: auto !important;
     font-size: 14px;
@@ -609,6 +640,12 @@ footer h6 {
     background-color: transparent;
     width: 0px;
 }
+#menu-category img {
+    float: left;
+    padding: 8px 0px 5px 100px;
+    height: 45px;
+    transform: translate(20%, 0px);
+}
     #container-login {
         width: 60%;
     }
@@ -629,17 +666,22 @@ footer h6 {
     #background-main {
         height: 100%;
         background-position-x: -265px !important;
+        background: url(https://img.freepik.com/fotos-gratis/homem-usando-laptop-e-smartphone-enquanto-esta-no-sofa-em-casa_23-2148793529.jpg?w=2000);
+        background-size: cover;
+    }
+    #container-main {
+        background: transparent;
     }
     #container-main-apresetion {
         min-height: 100vh;
         flex-direction: column-reverse;
         justify-content: center;
         gap: 70px;
+        background: transparent;
     }
     #container-produtos {
-        padding: 10px 15px 0px 0px;
+        padding: 0px 0px 0px 0px;
         width: 100vw !important;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 230px));
         margin: 0 auto;
     }
     #apresention p {
@@ -649,6 +691,10 @@ footer h6 {
     }
     #apresention-text {
         height: 80%;
+        transform: translate(0px, 90px);
+    }
+    #plus{
+        display: none !important;
     }
     #container-main3 {
         height: 100%;
@@ -776,10 +822,47 @@ footer h6 {
     height: 500px;
     width: 400px;
     }
+    #plus{
+        display: none !important;
+    }
 }
 @media (max-width: 412px) {
     .produtos {
         width: 180px;
     }
+    .plus{
+        display: none !important;
+    }
 
+}
+@media (max-width: 1094px) {
+    .news-img {
+        width: 50%;
+    }
+    .news {
+        height: 330px;
+        min-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .news img {
+        width: 50%;
+    }
+    .news a {
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #background-main img{ 
+        top: 56%;
+        background-position-x: -500px !important;
+    }
+    #main-3 {
+        height: auto !important;
+    }
+    #plus{
+        display: none !important;
+    }
 }
