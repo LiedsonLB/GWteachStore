@@ -36,7 +36,7 @@ html, body {
 #container-login {
   z-index: 15;
   position: relative;
-  background: #161616;
+  background: #020117;
   background-size: cover;
   height: 100%;
   display: flex;
@@ -535,13 +535,15 @@ background-position: center;
     width: 50%;
 }
 .text-news {
-    background-color: #fff;
+    background-color: #020058;
     height: 100%;
     width: 60%;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    filter: saturate(0.5);
     }
 
 
