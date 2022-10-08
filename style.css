@@ -19,7 +19,7 @@ html, body {
 
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #050155;
+    background-color: #161616;
     border-radius: 16px;
 }
 
@@ -36,7 +36,7 @@ html, body {
 #container-login {
   z-index: 15;
   position: relative;
-  background: #020117;
+  background: #0a0a0a;
   background-size: cover;
   height: 100%;
   display: flex;
@@ -271,10 +271,10 @@ main {
 #container-main {
     height: 100%;
     animation: apresentionPage 1s linear;
-    background: #161616;
+    background: #0a0a0a;
 }
 #container-main-apresetion {
-    background: #161616;
+    background: #0a0a0a;
     font-size: 25px;
     display: flex;
     margin: 0 auto;
@@ -390,7 +390,7 @@ main {
 
                                     /* MAIN 3*/                              
 #container-main3 {
-    background: #161616;
+    background: #0a0a0a;
     background-size: cover;
     width: 100%;
     height: auto;
