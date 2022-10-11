@@ -271,10 +271,12 @@ main {
 #container-main {
     height: 100%;
     animation: apresentionPage 1s linear;
-    background: #0a0a0a;
+    background: url(https://p4.wallpaperbetter.com/wallpaper/1022/37/262/4k-distant-planet-sunset-horizon-wallpaper-preview.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 #container-main-apresetion {
-    background: #0a0a0a;
+    background: transparent;
     font-size: 25px;
     display: flex;
     margin: 0 auto;
@@ -390,7 +392,8 @@ main {
 
                                     /* MAIN 3*/                              
 #container-main3 {
-    background: #0a0a0a;
+    background: url(https://p4.wallpaperbetter.com/wallpaper/1022/37/262/4k-distant-planet-sunset-horizon-wallpaper-preview.jpg);
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -535,7 +538,7 @@ background-position: center;
     width: 50%;
 }
 .text-news {
-    background-color: #020058;
+    background-color: #161616;
     height: 100%;
     width: 60%;
     color: #fff;
