@@ -1,5 +1,5 @@
 # GWteachStore - Ecommerce
-Um repositorio de um site de e-commerce quando estava iniciando meus estudos em HTML, CSS e manipulação de DOM no Javascript
+Um repositorio de um site e-commerce quando estava iniciando meus estudos em HTML, CSS e manipulação de DOM no Javascript
 
 # Conhecimentos utilizados:
 <div style="display: flex;">
