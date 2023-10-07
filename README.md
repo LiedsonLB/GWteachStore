@@ -1,4 +1,4 @@
-# GWteachStore - Ecommerce
+# GWteachStore - Ecommerce de vendas
 Um repositorio de um site e-commerce quando estava iniciando meus estudos em HTML, CSS e manipulação de DOM no Javascript
 
 # Conhecimentos utilizados:
